@@ -35,21 +35,21 @@ int main(void)
         if(SW2 == 0)
         {
             LED3 = 1;
-            __delay_ms(100);
+            __delay_ms(30);
             LED4 = 1;
-            __delay_ms(100);
+            __delay_ms(5);
             LED5 = 1;
-            __delay_ms(100);
+            __delay_ms(30);
             LED6 = 1;
-            __delay_ms(100);
+            __delay_ms(5);
             LED3 = 0;
             __delay_ms(100);
             LED4 = 0;
-            __delay_ms(100);
+            __delay_ms(10);
             LED5 = 0;
             __delay_ms(100);
             LED6 = 0;
-            __delay_ms(100);
+            __delay_ms(10);
         }
         
         // Add code for your Program Analysis and Programming Activities here:
@@ -57,6 +57,7 @@ int main(void)
         // Activate bootloader if SW1 is pressed.
         if(SW1 == 0)
         {
+
             RESET();
         }
     }
