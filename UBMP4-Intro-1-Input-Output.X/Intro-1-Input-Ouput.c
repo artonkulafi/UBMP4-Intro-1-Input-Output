@@ -30,38 +30,136 @@ int main(void)
 	
     // Code in this while loop runs repeatedly.
     while(1)
-	{
-        // If SW2 is pressed, make a flashy light pattern
-        if(SW2 == 0)
+	
+          
+          
+        if(SW5 == 0)
         {
             LED3 = 1;
-            __delay_ms(30);
+            __delay_ms(500);
             LED4 = 1;
-            __delay_ms(5);
+            __delay_ms(500);
             LED5 = 1;
-            __delay_ms(30);
+            __delay_ms(500);
             LED6 = 1;
-            __delay_ms(5);
+            __delay_ms(500);
+            LED3 = 0;
+            __delay_ms(300);
+            LED4 = 0;
+            __delay_ms(300);
+            LED5 = 0;
+            __delay_ms(300);
+            LED6 = 0;
+            __delay_ms(300);
+        }
+
+        
+        // Add code for your Program Analysis and Programming Activities here:
+      
+    if(SW3 == 0)
+        {
+            LED3 = 1;
+            __delay_ms(543);
+            LED4 = 1;
+            __delay_ms(49);
+            LED5 = 1;
+            __delay_ms(543);
+            LED6 = 1;
+            __delay_ms(49);
+            LED3 = 0;
+            __delay_ms(594);
+            LED4 = 0;
+            __delay_ms(49);
+            LED5 = 0;
+            __delay_ms(594);
+            LED6 = 0;
+            __delay_ms(49);
+        }
+
+        if(SW4 == 0)
+        {
+            LED3 = 1;
+            __delay_ms(200);
+            LED4 = 1;
+            __delay_ms(200);
+            LED5 = 1;
+            __delay_ms(200);
+            LED6 = 1;
+            __delay_ms(200);
+            LED3 = 0;
+            __delay_ms(200);
+            LED4 = 0;
+            __delay_ms(200);
+            LED5 = 0;
+            __delay_ms(200);
+            LED6 = 0;
+            __delay_ms(200);
+        }
+
+        if (SW2 == 0)
+        {
+            LED3 = 1;
+            __delay_ms(100);
+            LED4 = 0;
+            __delay_ms(100);
+            LED5 = 1;
+            __delay_ms(100);
+            LED6 = 0;
+            __delay_ms(100);
+            LED3 = 0;
+            __delay_ms(100);
+            LED4 = 1;
+            __delay_ms(100);
+            LED5 = 0;
+            __delay_ms(100);
+            LED6 = 1;
+            __delay_ms(100);
+            }
+
+
+
+
+
+
+
+
+        
+ if(SW2 == 0)   //flashy light pattern
+        {
+             LED3 = 1;
+            __delay_ms(100);
+            LED4 = 1;
+            __delay_ms(100);
+            LED5 = 1;
+            __delay_ms(100);
+            LED6 = 1;
+            __delay_ms(100);
             LED3 = 0;
             __delay_ms(100);
             LED4 = 0;
-            __delay_ms(10);
+            __delay_ms(100);
             LED5 = 0;
             __delay_ms(100);
             LED6 = 0;
-            __delay_ms(10);
-        }
-        
-        // Add code for your Program Analysis and Programming Activities here:
+            __delay_ms(100);
+            }
+          
+
+     
+
+
+
+
+
+
 
         // Activate bootloader if SW1 is pressed.
-        if(SW1 == 0)
+        if (SW1 == 0)
+        
+        RESET();
         {
-
-            RESET();
-        }
     }
-}
+
 
 /* Program Analysis
  * 
