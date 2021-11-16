@@ -33,25 +33,13 @@ int main(void)
 	
           
           
-        if(SW5 == 0)
-        {
-            LED3 = 1;
-            __delay_ms(500);
-            LED4 = 1;
-            __delay_ms(500);
-            LED5 = 1;
-            __delay_ms(500);
-            LED6 = 1;
-            __delay_ms(500);
-            LED3 = 0;
-            __delay_ms(300);
-            LED4 = 0;
-            __delay_ms(300);
-            LED5 = 0;
-            __delay_ms(300);
-            LED6 = 0;
-            __delay_ms(300);
-        }
+        if(SW5 = 00)
+	{
+		BEEPER = 1;
+                __delay_ms(50);
+                BEEPER = 0;
+	}
+
 
         
         // Add code for your Program Analysis and Programming Activities here:
